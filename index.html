@@ -24,7 +24,7 @@
         <li><a href="#agents">Agents</a></li>
         <li><a href="#story">Day in the Life</a></li>
         <li><a href="#pricing">Pricing</a></li>
-        <li><a href="https://github.com/99x/xianix-team" target="_blank" class="nav-github"><i data-lucide="github"></i> GitHub</a></li>
+        <li><a href="https://github.com/xianix-team" target="_blank" class="nav-github"><i data-lucide="github"></i> GitHub</a></li>
       </ul>
     </nav>
 
@@ -38,7 +38,7 @@
         so your engineers can focus on work that only humans can do.
       </p>
       <div class="hero-actions">
-        <a class="btn btn-primary" href="https://github.com/99x/xianix-team/blob/main/docs/getting-started/README.md" target="_blank">
+        <a class="btn btn-primary" href="https://xianix-team.github.io/documentation/introduction/overview/" target="_blank">
           Get Started
         </a>
         <a class="btn btn-outline" href="#agents">
@@ -102,7 +102,7 @@
 
           <div class="vocab-cards">
 
-            <a href="https://github.com/99x/xianix-team/blob/main/docs/aidlc-concepts/bolts.md" target="_blank" class="vocab-card">
+            <a href="https://github.com/xianix-team/blob/main/docs/aidlc-concepts/bolts.md" target="_blank" class="vocab-card">
               <div class="vocab-side vocab-side-old">
                 <span class="vocab-badge vocab-badge-old">Traditional Agile</span>
                 <span class="vocab-term-old"><i data-lucide="timer"></i> <s>Sprints</s></span>
@@ -116,7 +116,7 @@
               </div>
             </a>
 
-            <a href="https://github.com/99x/xianix-team/blob/main/docs/aidlc-concepts/intents.md" target="_blank" class="vocab-card">
+            <a href="https://github.com/xianix-team/blob/main/docs/aidlc-concepts/intents.md" target="_blank" class="vocab-card">
               <div class="vocab-side vocab-side-old">
                 <span class="vocab-badge vocab-badge-old">Traditional Agile</span>
                 <span class="vocab-term-old"><i data-lucide="book"></i> <s>Epics</s></span>
@@ -130,10 +130,10 @@
               </div>
             </a>
 
-            <a href="https://github.com/99x/xianix-team/blob/main/docs/aidlc-concepts/units.md" target="_blank" class="vocab-card">
+            <a href="https://github.com/xianix-team/blob/main/docs/aidlc-concepts/units.md" target="_blank" class="vocab-card">
               <div class="vocab-side vocab-side-old">
                 <span class="vocab-badge vocab-badge-old">Traditional Agile</span>
-                <span class="vocab-term-old"><i data-lucide="folder-open"></i> <s>Subdomains</s></span>
+                <span class="vocab-term-old"><i data-lucide="folder-open"></i> <s>Epics</s></span>
                 <p>Conceptual groupings within a bounded context</p>
               </div>
               <div class="vocab-divider"><span class="vocab-divider-arrow">→</span></div>
@@ -144,7 +144,7 @@
               </div>
             </a>
 
-            <a href="https://github.com/99x/xianix-team/blob/main/docs/aidlc-concepts/mob-elaborations.md" target="_blank" class="vocab-card">
+            <a href="https://github.com/xianix-team/blob/main/docs/aidlc-concepts/mob-elaborations.md" target="_blank" class="vocab-card">
               <div class="vocab-side vocab-side-old">
                 <span class="vocab-badge vocab-badge-old">Traditional Agile</span>
                 <span class="vocab-term-old"><i data-lucide="user"></i> <s>Standups</s></span>
@@ -153,7 +153,7 @@
               <div class="vocab-divider"><span class="vocab-divider-arrow">→</span></div>
               <div class="vocab-side vocab-side-new">
                 <span class="vocab-badge vocab-badge-new">AI-DLC</span>
-                <span class="vocab-term-new"><i data-lucide="users"></i> Mob Elaboration</span>
+                <span class="vocab-term-new"><i data-lucide="users"></i> Mobs</span>
                 <p>Live working sessions where the team reviews and adjusts AI-generated proposals together</p>
               </div>
             </a>
@@ -409,9 +409,9 @@
         <p class="section-label">Core flow</p>
         <h2 class="section-title">The agent team</h2>
         <p class="section-subtitle">Five specialized agents support the delivery flow, each with a clear trigger, a defined output, a simple definition of done, and an explicit human checkpoint. 
-          The open-source repo already exposes the moving parts for the shipped flows: inspectable prompts in the <a href="https://github.com/99x/xianix-team/tree/main/plugins" target="_blank" rel="noopener noreferrer">plugin folders</a>, 
-          runtime wiring in the <a href="https://github.com/99x/xianix-team/blob/main/docs/technical/agent-architecture.md" target="_blank" rel="noopener noreferrer">agent architecture docs</a>, 
-          and container setup in the <a href="https://github.com/99x/xianix-team/blob/main/docs/technical/docker-deployment.md" target="_blank" rel="noopener noreferrer">Docker deployment guide</a>. </p>
+          The open-source repo already exposes the moving parts for the shipped flows: inspectable prompts in the <a href="https://github.com/xianix-team/tree/main/plugins" target="_blank" rel="noopener noreferrer">plugin folders</a>, 
+          runtime wiring in the <a href="https://github.com/xianix-team/blob/main/docs/technical/agent-architecture.md" target="_blank" rel="noopener noreferrer">agent architecture docs</a>, 
+          and container setup in the <a href="https://github.com/xianix-team/blob/main/docs/technical/docker-deployment.md" target="_blank" rel="noopener noreferrer">Docker deployment guide</a>. </p>
 
         <p class="agent-flow-intro">These agents are loosely coupled in implementation, but they operate as a team by passing artifacts forward and stopping at human checkpoints. One agent's output becomes the next agent's input, and people can approve, edit, or redirect the handoff at each stage.</p>
 
@@ -841,29 +841,61 @@
     </section>
 
 
-    <!-- ── Not This ── -->
+    <!-- ── What Xianix Is / Is Not ── -->
     <section class="section not-this">
-      <div class="section-inner not-this-inner">
-        <h2 class="section-title">What Xianix is <em>not</em></h2>
-        <div class="not-grid">
-          <div class="not-item">
-            <span class="not-x"><i data-lucide="x"></i></span>
-            <div>
-              <strong>Not full automation.</strong> Agents support the work, but people remain accountable for decisions and outcomes.
+      <div class="section-inner identity-inner">
+        <div class="identity-grid">
+
+          <!-- Left: What Xianix is NOT -->
+          <div class="identity-col identity-col-not">
+            <h2 class="section-title">What Xianix is <em>not</em></h2>
+            <div class="not-grid">
+              <div class="not-item">
+                <span class="not-x"><i data-lucide="x"></i></span>
+                <div>
+                  <strong>Not full automation.</strong> Agents support the work, but people remain accountable for decisions and outcomes.
+                </div>
+              </div>
+              <div class="not-item">
+                <span class="not-x"><i data-lucide="x"></i></span>
+                <div>
+                  <strong>Not a replacement for skilled engineers.</strong> Good results still depend on people who understand the product, the codebase, and the trade-offs.
+                </div>
+              </div>
+              <div class="not-item">
+                <span class="not-x"><i data-lucide="x"></i></span>
+                <div>
+                  <strong>Not an opaque pipeline.</strong> Teams should be able to see what agents did, why they did it, and where human review happened.
+                </div>
+              </div>
             </div>
           </div>
-          <div class="not-item">
-            <span class="not-x"><i data-lucide="x"></i></span>
-            <div>
-              <strong>Not a replacement for skilled engineers.</strong> Good results still depend on people who understand the product, the codebase, and the trade-offs.
+
+          <!-- Right: What Xianix IS -->
+          <div class="identity-col identity-col-is">
+            <h2 class="section-title">What Xianix <em class="is-accent">is</em></h2>
+            <div class="is-grid">
+              <div class="is-item">
+                <span class="is-check"><i data-lucide="check"></i></span>
+                <div>
+                  <strong>An open plugin platform.</strong> Any organization can build its own fleet of AI-DLC agents as standard <a href="https://docs.anthropic.com/en/docs/claude-code/plugins" target="_blank" rel="noopener noreferrer">Claude Code Plugins</a> and integrate them into Xianix.
+                </div>
+              </div>
+              <div class="is-item">
+                <span class="is-check"><i data-lucide="check"></i></span>
+                <div>
+                  <strong>Official plugins included.</strong> Xianix ships a curated set of official plugins covering the core delivery lifecycle, ready to use out of the box.
+                </div>
+              </div>
+              <div class="is-item">
+                <span class="is-check"><i data-lucide="check"></i></span>
+                <div>
+                  <strong>No lock-in.</strong> Every agent is a standard Claude Code Plugin you own and control. Take it with you, run it outside Xianix, or swap Xianix out entirely — your investment in agents is never trapped.
+                </div>
+              </div>
             </div>
           </div>
-          <div class="not-item">
-            <span class="not-x"><i data-lucide="x"></i></span>
-            <div>
-              <strong>Not an opaque pipeline.</strong> Teams should be able to see what agents did, why they did it, and where human review happened.
-            </div>
-          </div>
+
         </div>
       </div>
     </section>
@@ -885,7 +917,7 @@
     <!-- ── Footer ── -->
     <footer>
       Built by <a href="https://99x.io" target="_blank">99x</a> &mdash;
-      <a href="https://github.com/99x/xianix-team" target="_blank">View on GitHub</a>
+      <a href="https://github.com/xianix-team" target="_blank">View on GitHub</a>
     </footer>
 
     <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>

@@ -1049,27 +1049,39 @@ nav {
 }
 
 /* ─────────────────────────────────────────
-   What this is not
+   What Xianix is / is not  (side-by-side)
 ───────────────────────────────────────── */
 .not-this { background: var(--color-bg); }
 
-.not-this-inner {
-  max-width: 760px;
-  margin: 0 auto;
-  text-align: center;
+.identity-inner { max-width: 1100px; margin: 0 auto; }
+
+.identity-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2.5rem;
+  align-items: start;
 }
 
-.not-this-inner .section-title { margin-bottom: 2.5rem; }
-.not-this-inner .section-title em { color: var(--color-red); font-style: normal; }
+.identity-col .section-title {
+  margin-bottom: 1.8rem;
+  text-align: left;
+  font-size: 1.55rem;
+}
 
-.not-grid {
+.identity-col-not .section-title em { color: var(--color-red); font-style: normal; }
+.identity-col-is  .section-title .is-accent { color: var(--color-green); font-style: normal; }
+
+/* Shared card styles for both columns */
+.not-grid,
+.is-grid {
   display: flex;
   flex-direction: column;
   gap: 1rem;
   text-align: left;
 }
 
-.not-item {
+.not-item,
+.is-item {
   display: flex;
   align-items: flex-start;
   gap: 1rem;
@@ -1081,10 +1093,19 @@ nav {
   color: var(--color-muted);
 }
 
-.not-item strong { color: var(--color-text); }
+.not-item strong,
+.is-item strong { color: var(--color-text); }
 
-.not-x {
-  color: var(--color-red);
+.is-item a {
+  color: var(--color-primary);
+  text-decoration: underline;
+  text-decoration-color: rgb(var(--color-primary-rgb) / 0.35);
+  text-underline-offset: 2px;
+}
+.is-item a:hover { text-decoration-color: var(--color-primary); }
+
+.not-x,
+.is-check {
   font-weight: 700;
   font-size: 1rem;
   flex-shrink: 0;
@@ -1093,7 +1114,19 @@ nav {
   align-items: center;
 }
 
+.not-x { color: var(--color-red); }
 .not-x svg { width: 1rem; height: 1rem; }
+
+.is-check { color: var(--color-green); }
+.is-check svg { width: 1rem; height: 1rem; stroke-width: 2.5; }
+
+@media (max-width: 768px) {
+  .identity-grid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+  .identity-col .section-title { text-align: center; }
+}
 
 /* ─────────────────────────────────────────
    Redesign the Machine
@@ -1577,5 +1610,6 @@ i[data-lucide] svg { display: inline-block; vertical-align: middle; stroke-width
 /* Metrics */
 .metric-icon svg     { width: 2rem;    height: 2rem;    stroke-width: 1.5;  }
 
-/* "Not this" X icons */
+/* "Not this" X icons & "Is this" check icons */
 .not-x svg           { width: 1rem;    height: 1rem;    stroke-width: 2.5; color: var(--color-red); }
+.is-check svg        { width: 1rem;    height: 1rem;    stroke-width: 2.5; color: var(--color-green); }
