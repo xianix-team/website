@@ -207,6 +207,277 @@ nav {
 
 .hero-meta .dot { opacity: 0.4; }
 
+.hero.hero-pod {
+  background:
+    radial-gradient(ellipse 75% 55% at 50% 0%, rgb(var(--color-primary-rgb) / 0.1) 0%, transparent 72%);
+}
+
+.hero h1 em {
+  font-style: italic;
+  font-weight: 700;
+  color: var(--color-text);
+}
+
+/* ─────────────────────────────────────────
+   Moat strip (99x credibility)
+───────────────────────────────────────── */
+.moat-strip {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem 1.5rem;
+  padding: 1.75rem 1.5rem;
+  border-top: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
+  background: var(--color-surface);
+}
+
+.moat-years {
+  font-size: 2.75rem;
+  font-weight: 800;
+  line-height: 1;
+  color: var(--color-primary);
+  font-variant-numeric: tabular-nums;
+  text-align: center;
+  min-width: 4.5rem;
+}
+
+.moat-years small {
+  display: block;
+  font-size: 0.65rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--color-muted);
+  margin-top: 0.35rem;
+}
+
+.moat-claim {
+  flex: 1 1 280px;
+  max-width: 560px;
+  font-size: 0.95rem;
+  color: var(--color-muted);
+  line-height: 1.55;
+}
+
+.moat-claim strong { color: var(--color-text); }
+
+.moat-pill {
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--color-muted);
+  border: 1px solid var(--color-border);
+  border-radius: 999px;
+  padding: 0.35rem 0.75rem;
+  background: var(--color-bg);
+}
+
+/* ─────────────────────────────────────────
+   Delivery pod equation
+───────────────────────────────────────── */
+.pod-equation {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  justify-content: center;
+  gap: 0.65rem 0.5rem;
+  margin-bottom: 2rem;
+}
+
+.pod-piece {
+  flex: 1 1 160px;
+  max-width: 220px;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: 1.15rem 1.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  transition: border-color 0.2s;
+}
+
+.pod-piece:hover { border-color: rgb(var(--color-primary-rgb) / 0.45); }
+
+.pod-piece-agents { border-top: 3px solid var(--color-primary); }
+.pod-piece-humans { border-top: 3px solid var(--color-green); }
+.pod-piece-gov { border-top: 3px solid var(--color-orange); }
+.pod-piece-result {
+  border-top: 3px solid var(--color-primary);
+  background: rgb(var(--color-primary-rgb) / 0.06);
+  max-width: 240px;
+}
+
+.pod-piece-label {
+  font-size: 0.65rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--color-muted);
+}
+
+.pod-piece-title {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--color-text);
+  letter-spacing: -0.2px;
+}
+
+.pod-piece-desc {
+  font-size: 0.82rem;
+  color: var(--color-muted);
+  line-height: 1.5;
+}
+
+.pod-op {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+  min-width: 1.5rem;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--color-muted);
+  padding: 0.25rem 0;
+}
+
+.pod-priced {
+  text-align: center;
+  font-size: 0.95rem;
+  color: var(--color-muted);
+  line-height: 1.65;
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.pod-priced strong { color: var(--color-text); }
+
+/* ─────────────────────────────────────────
+   CxO role tabs
+───────────────────────────────────────── */
+.cxo-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1.75rem;
+}
+
+.cxo-tab {
+  appearance: none;
+  font: inherit;
+  cursor: pointer;
+  text-align: left;
+  padding: 0.75rem 1rem;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--color-border);
+  background: var(--color-bg);
+  color: var(--color-muted);
+  font-size: 0.88rem;
+  line-height: 1.35;
+  transition: border-color 0.2s, background 0.2s, color 0.2s;
+  flex: 1 1 160px;
+  min-width: 140px;
+}
+
+.cxo-tab:hover {
+  border-color: rgb(var(--color-primary-rgb) / 0.4);
+  color: var(--color-text);
+}
+
+.cxo-tab[aria-selected="true"] {
+  border-color: var(--color-primary);
+  background: rgb(var(--color-primary-rgb) / 0.1);
+  color: var(--color-text);
+}
+
+.cxo-tab-role {
+  display: block;
+  font-size: 0.68rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--color-primary);
+  margin-bottom: 0.2rem;
+}
+
+.cxo-tab[aria-selected="true"] .cxo-tab-role {
+  color: var(--color-text);
+}
+
+.cxo-panel[data-active="false"] { display: none; }
+.cxo-panel[data-active="true"] { display: block; }
+
+.cxo-lead {
+  margin-bottom: 1.5rem;
+}
+
+.cxo-lead h3 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: -0.3px;
+  margin-bottom: 0.65rem;
+  color: var(--color-text);
+}
+
+.cxo-lead p {
+  color: var(--color-muted);
+  font-size: 0.95rem;
+  line-height: 1.6;
+  max-width: 720px;
+}
+
+.cxo-points {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr));
+  gap: 1rem;
+}
+
+.cxo-points li {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+  padding: 1rem 1.15rem;
+  background: var(--color-bg);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+}
+
+.cxo-point-icon {
+  flex-shrink: 0;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: var(--radius);
+  background: rgb(var(--color-primary-rgb) / 0.1);
+  border: 1px solid rgb(var(--color-primary-rgb) / 0.22);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-primary);
+}
+
+.cxo-point-icon svg {
+  width: 1.15rem;
+  height: 1.15rem;
+  stroke-width: 2;
+}
+
+.cxo-point-title {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--color-text);
+  margin-bottom: 0.25rem;
+}
+
+.cxo-point-desc {
+  font-size: 0.85rem;
+  color: var(--color-muted);
+  line-height: 1.5;
+}
+
 /* Buttons */
 .btn {
   display: inline-block;
@@ -1163,6 +1434,15 @@ nav {
   padding: 1.5rem;
 }
 
+.redesign-content h4 {
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--color-primary);
+  margin-bottom: 0.35rem;
+}
+
 .redesign-content h3 {
   font-size: 1.25rem;
   margin-bottom: 0.75rem;
@@ -1246,6 +1526,30 @@ footer a { color: var(--color-primary); text-decoration: none; }
   .handoff-arrow { display: none; }
   .redesign-grid { gap: 1.5rem; }
   .transform-block { margin-bottom: 2.5rem; }
+
+  .moat-strip {
+    flex-direction: column;
+    text-align: center;
+    padding: 1.5rem 1.25rem;
+  }
+
+  .moat-claim { max-width: 100%; }
+
+  .pod-equation {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .pod-piece { max-width: 100%; width: 100%; }
+  .pod-piece-result { max-width: 100%; }
+
+  .pod-op {
+    transform: rotate(90deg);
+    padding: 0.15rem 0;
+  }
+
+  .cxo-tabs { flex-direction: column; }
+  .cxo-tab { min-width: 0; width: 100%; }
 }
 
 /* ─────────────────────────────────────────
